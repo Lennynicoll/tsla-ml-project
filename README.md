@@ -1,43 +1,43 @@
-# Predicción del Precio Futuro de TSLA con Machine Learning
+# Prediccion del Precio Futuro de TSLA con Machine Learning
 
-## Descripción del Proyecto
+## Descripcion del Proyecto
 
-Sistema capaz de estimar el precio futuro de un ticker en el mercado de valores utilizando un modelo de Machine Learning supervisado basado en regresión lineal. El proyecto utiliza datos históricos de TSLA (Tesla Inc.) obtenidos a través de la API de Alpaca Markets.
+Sistema capaz de estimar el precio futuro de un ticker en el mercado de valores utilizando un modelo de Machine Learning supervisado basado en regresion lineal. El proyecto utiliza datos historicos de TSLA (Tesla Inc.) obtenidos a traves de la API de Alpaca Markets.
 
 ## Pipeline del Proyecto
 
-1. **Recolección de Datos** → API Alpaca (alpaca-py)
-2. **Preprocesamiento** → Ingeniería de características, escalado
-3. **EDA** → Análisis exploratorio con gráficas y estadísticas
-4. **Entrenamiento** → 8 modelos de regresión
-5. **Evaluación** → MAE, MSE, RMSE, R²
-6. **Predicción** → Sistema para nuevos datos (.csv)
+1. **Recoleccion de Datos** -> API Alpaca (alpaca-py)
+2. **Preprocesamiento** -> Ingenieria de caracteristicas, escalado
+3. **EDA** -> Analisis exploratorio con graficas y estadisticas
+4. **Entrenamiento** -> 8 modelos de regresion
+5. **Evaluacion** -> MAE, MSE, RMSE, R
+6. **Prediccion** -> Sistema para nuevos datos (.csv)
 
 ## Estructura del Repositorio
 
 ```
 tsla-ml-project/
-├── data/
-│   ├── raw/
-│   │   └── tsla_raw.csv
-│   └── processed/
-│       └── tsla_processed.csv
-├── notebooks/
-│   ├── 00_proyecto_completo_TSLA.ipynb  ← NOTEBOOK COMPLETO
-│   ├── 01_datos_preprocesamiento.ipynb  ← Persona 1
-│   ├── 02 EDA TSLA.ipynb               ← Persona 2
-│   └── notebooks/
-│       ├── 03_modelos_lineales_knn.ipynb ← Persona 3
-│       └── tsla_modelado.ipynb          ← Persona 4
-├── docs/
-│   └── P.2 EDA TSLA.docx
-├── persona1_documentacion.md
-└── .gitignore
+ data/
+    raw/
+       tsla_raw.csv
+    processed/
+        tsla_processed.csv
+ notebooks/
+    00_proyecto_completo_TSLA.ipynb   NOTEBOOK COMPLETO
+    01_datos_preprocesamiento.ipynb   Persona 1
+    02 EDA TSLA.ipynb                Persona 2
+    notebooks/
+        03_modelos_lineales_knn.ipynb  Persona 3
+        tsla_modelado.ipynb           Persona 4
+ docs/
+    P.2 EDA TSLA.docx
+ persona1_documentacion.md
+ .gitignore
 ```
 
 ## Modelos Entrenados
 
-| # | Modelo | Hiperparámetros | R² |
+| # | Modelo | Hiperparametros | R |
 |---|---|---|---|
 | 1 | OLS (Linear Regression) | N/A | 0.9511 |
 | 2 | Ridge Regression | alpha=1.0 | 0.9510 |
@@ -51,10 +51,10 @@ tsla-ml-project/
 ## Dataset
 
 - **Ticker:** TSLA
-- **Período:** Enero 2020 - Julio 2026
-- **Registros:** 1,624 (después de limpieza)
+- **Periodo:** Enero 2020 - Julio 2026
+- **Registros:** 1,624 (despues de limpieza)
 - **Features:** 11 (open, high, low, close, volume, retorno_diario, sma_5, sma_20, volatilidad_5, volumen_promedio_5, precio_anterior)
-- **Variable Objetivo:** precio_futuro (precio de cierre del día siguiente)
+- **Variable Objetivo:** precio_futuro (precio de cierre del dia siguiente)
 
 ## Requisitos
 
@@ -68,7 +68,7 @@ alpaca-py
 python-dotenv
 ```
 
-## Instalación
+## Instalacion
 
 ```bash
 pip install -r requirements.txt
@@ -86,18 +86,18 @@ pip install -r requirements.txt
 
 ## Resultados
 
-El **modelo SVM con kernel lineal** obtuvo el mejor desempeño:
+El **modelo SVM con kernel lineal** obtuvo el mejor desempeno:
 - **MAE:** $9.44 USD
 - **RMSE:** $12.07 USD
-- **R²:** 0.9574
+- **R:** 0.9574
 
 ## Integrantes
 
-- **Persona 1:** Recolección y Preprocesamiento de Datos
-- **Persona 2:** Análisis Exploratorio de Datos (EDA)
-- **Persona 3:** Modelos Lineales, Probabilísticos y KNN
+- **Persona 1:** Recoleccion y Preprocesamiento de Datos
+- **Persona 2:** Analisis Exploratorio de Datos (EDA)
+- **Persona 3:** Modelos Lineales, Probabilisticos y KNN
 - **Persona 4:** Random Forest, SVM y MLP
 
 ## Licencia
 
-Proyecto académico - Instituto Tecnológico de Las Américas (ITLA)
+Proyecto academico - Instituto Tecnologico de Las Americas (ITLA)
