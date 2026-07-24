@@ -93,10 +93,10 @@ El **modelo SVM con kernel lineal** obtuvo el mejor desempeno:
 
 ## Integrantes
 
-- **Persona 1:** Recoleccion y Preprocesamiento de Datos
-- **Persona 2:** Analisis Exploratorio de Datos (EDA)
-- **Persona 3:** Modelos Lineales, Probabilisticos y KNN
-- **Persona 4:** Random Forest, SVM y MLP
+- **Lenny Nicoll Nuñez Rosario Matricula:2025-1878:** Recoleccion y Preprocesamiento de Datos
+- **Elmer Joel Montilla Castro Matricula: 2023-1212:** Analisis Exploratorio de Datos (EDA)
+- **Edwardo Mejía Matricula: 2023-1670:** Modelos Lineales, Probabilisticos y KNN
+- **Iván Hernández Matricula: 2025-1875:** Random Forest, SVM y MLP
 
 ## Licencia
 
